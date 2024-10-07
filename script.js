@@ -43,21 +43,21 @@ document.getElementById('add-img-btn').addEventListener('click', function () {
 });
 
 document.getElementById('increase-img-btn').addEventListener('click', function () {
-    imgElement = document.getElementById('city-image'); // Обновляем переменную
+    imgElement = document.getElementById('city-image');
     if (imgElement) {
         imgElement.width += 50;
     }
 });
 
 document.getElementById('decrease-img-btn').addEventListener('click', function () {
-    imgElement = document.getElementById('city-image'); // Обновляем переменную
+    imgElement = document.getElementById('city-image');
     if (imgElement && imgElement.width > 50) {
         imgElement.width -= 50;
     }
 });
 
 document.getElementById('remove-img-btn').addEventListener('click', function () {
-    imgElement = document.getElementById('city-image'); // Обновляем переменную
+    imgElement = document.getElementById('city-image');
     if (imgElement) {
         imgElement.remove();
         imgElement = null;
