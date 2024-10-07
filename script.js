@@ -27,10 +27,8 @@ document.querySelectorAll('h2, p, h3, ul li, ol li')[secondElementIndex - 2].add
     toggleColorSecond = !toggleColorSecond;
 });
 
-// Объявляем переменную imgElement без присваивания значения
 let imgElement;
 
-// Добавляем изображение и обновляем переменную imgElement
 document.getElementById('add-img-btn').addEventListener('click', function () {
     if (!document.getElementById('city-image')) {
         let newImg = document.createElement('img');
@@ -44,7 +42,6 @@ document.getElementById('add-img-btn').addEventListener('click', function () {
     }
 });
 
-// Увеличиваем размер изображения
 document.getElementById('increase-img-btn').addEventListener('click', function () {
     imgElement = document.getElementById('city-image'); // Обновляем переменную
     if (imgElement) {
@@ -52,7 +49,6 @@ document.getElementById('increase-img-btn').addEventListener('click', function (
     }
 });
 
-// Уменьшаем размер изображения
 document.getElementById('decrease-img-btn').addEventListener('click', function () {
     imgElement = document.getElementById('city-image'); // Обновляем переменную
     if (imgElement && imgElement.width > 50) {
@@ -60,7 +56,6 @@ document.getElementById('decrease-img-btn').addEventListener('click', function (
     }
 });
 
-// Удаляем изображение
 document.getElementById('remove-img-btn').addEventListener('click', function () {
     imgElement = document.getElementById('city-image'); // Обновляем переменную
     if (imgElement) {
